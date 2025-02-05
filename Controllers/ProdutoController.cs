@@ -1,0 +1,101 @@
+﻿using System.Reflection.Metadata.Ecma335;
+using LojaProdutos.Dto.Produto;
+using LojaProdutos.Services.Categoria;
+using LojaProdutos.Services.Produto;
+using Microsoft.AspNetCore.Mvc;
+
+namespace LojaProdutos.Controllers
+{
+    public class ProdutoController : Controller
+    {
+        private readonly IProdutoInterface _produtoInterface;
+        private readonly ICategoriaInterface _categoriaInterface;
+        public ProdutoController(IProdutoInterface produtoInterface, ICategoriaInterface categoriaInterface)
+        {
+            _produtoInterface = produtoInterface;
+            _categoriaInterface = categoriaInterface;
+        }
+        public async Task<IActionResult> Index()
+        {
+            var produtos = await _produtoInterface.BuscarProdutos();
+
+            return View(produtos);
+        }
+
+        public async Task<IActionResult> Cadastrar()
+        {
+            ViewBag.Categorias = await _categoriaInterface.BuscarCategorias();
+
+            return View();
+        }
+
+        public async Task<IActionResult> Remover(int id)
+        {
+            var produto = await _produtoInterface.Remover(id);
+            return RedirectToAction("Index", "Produto");
+        }
+
+        public async Task<IActionResult> Detalhes(int id)
+        {
+            var produto = await _produtoInterface.BuscarProdutoPorId(id);
+
+            return View(produto);
+        }
+        public async Task<IActionResult> Editar(int id)
+        {
+            var produto = await _produtoInterface.BuscarProdutoPorId(id);
+
+            var editarProdutoDTO = new EditarProdutoDTO
+            {
+                Nome = produto.Nome,
+                Marca = produto.Marca,
+                Valor = produto.Valor,
+                CategoriaModelId = produto.CategoriaModelId,
+                Foto = produto.Foto,
+                QuantidadeEstoque = produto.QuantidadeEstoque
+            };
+
+            ViewBag.Categorias = await _categoriaInterface.BuscarCategorias();
+
+            return View(editarProdutoDTO);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Cadastrar(CriarProdutoDTO criarProdutoDTO, IFormFile foto)
+        {
+            if (ModelState.IsValid)
+            {
+                var produto = await _produtoInterface.Cadastrar(criarProdutoDTO, foto);
+                TempData["MensagemSucesso"] = "Produto cadastrado com sucesso!";
+
+                return RedirectToAction("Index", "Produto");
+            }
+            else
+            {
+                ViewBag.Categorias = await _categoriaInterface.BuscarCategorias();
+                TempData["MensagemErro"] = "Erro ao cadastrar usuário";
+
+                return View(criarProdutoDTO); 
+            }
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Editar(EditarProdutoDTO editarProdutoDTO, IFormFile? foto)
+        {
+            if (ModelState.IsValid)
+            {
+                var produto = await _produtoInterface.Editar(editarProdutoDTO, foto);
+                TempData["MensagemSucesso"] = "Produto editado com sucesso!";
+
+                return RedirectToAction("Index", "Produto");
+            }
+            else
+            {
+                ViewBag.Categorias = await _categoriaInterface.BuscarCategorias();
+                TempData["MensagemErro"] = "Erro ao editar usuário";
+
+                return View(editarProdutoDTO);
+            }
+        }
+    }
+}
