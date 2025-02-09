@@ -17,6 +17,13 @@ namespace LojaProdutos.Controllers
             var usuarios = await _usuarioInterface.BuscarUsuarios();
             return View(usuarios);
         }
+
+        public IActionResult Cadastrar()
+        {
+            return View();
+        }
+
+        [HttpPost]
         public async Task<IActionResult> Cadastrar(CriarUsuarioDTO criarUsuarioDTO)
         {
             if(ModelState.IsValid)
