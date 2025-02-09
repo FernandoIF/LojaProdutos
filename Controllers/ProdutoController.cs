@@ -73,7 +73,7 @@ namespace LojaProdutos.Controllers
             else
             {
                 ViewBag.Categorias = await _categoriaInterface.BuscarCategorias();
-                TempData["MensagemErro"] = "Erro ao cadastrar usuário";
+                TempData["MensagemErro"] = "Erro ao cadastrar Produto";
 
                 return View(criarProdutoDTO); 
             }
@@ -92,7 +92,7 @@ namespace LojaProdutos.Controllers
             else
             {
                 ViewBag.Categorias = await _categoriaInterface.BuscarCategorias();
-                TempData["MensagemErro"] = "Erro ao editar usuário";
+                TempData["MensagemErro"] = "Erro ao editar Produto";
 
                 return View(editarProdutoDTO);
             }

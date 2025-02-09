@@ -1,0 +1,51 @@
+﻿@using LojaProdutos.Models
+@model List<UsuarioModel>
+
+<div class="container mt-5">
+	<div class="d-flex justify-content-between align-items-center mb-3">
+		<h2>Listagem de Usuários</h2>
+		<a 
+			asp-controller="Usuario"
+			asp-action="Cadastrar" 
+			class="btn btn-success"
+		><i class="bi bi-plus-circle mx-2"></i>Cadastrar Novo Usuário</a>
+	</div>
+	<table class="table table-hover table-bordered" id="registros">
+		<thead class="table-dark">
+			<tr>
+				<th>Cargo</th>
+				<th>Nome</th>
+				<th>Estado</th>
+				<th>E-mail</th>
+				<th>Data de Criação</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			@if(Model != null)
+			{
+				@if(Model.Count() > 0)
+				{
+					@foreach(var usuario in Model)
+					{
+						<tr>
+							<th>@usuario.Cargo</th>
+							<th>@usuario.Nome</th>
+							<th>@usuario.Endereco.Estado</th>
+							<th>@usuario.Email</th>
+							<th>@usuario.DataCadastro.ToString("dd/MM/yyyy")</th>
+							<td>
+								<a 
+									asp-controller="Usuario"
+									asp-action="Editar"
+									asp-route-id="@usuario.Id"
+									class="btn btn-info"
+								><i class="bi bi-pencil mx-2"></i>Editar</a>
+							</td>
+						</tr>
+					}
+				}
+			}
+		</tbody>
+	</table>
+</div>

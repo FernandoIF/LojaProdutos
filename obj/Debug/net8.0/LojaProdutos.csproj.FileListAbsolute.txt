@@ -463,3 +463,12 @@ C:\Users\ferna\source\repos\LojaProdutos\LojaProdutos\bin\Debug\net8.0\Microsoft
 C:\Users\ferna\source\repos\LojaProdutos\LojaProdutos\bin\Debug\net8.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\ferna\source\repos\LojaProdutos\LojaProdutos\bin\Debug\net8.0\Microsoft.CodeAnalysis.Razor.dll
 C:\Users\ferna\source\repos\LojaProdutos\LojaProdutos\obj\Debug\net8.0\LojaProdutos.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ferna\source\repos\LojaProdutos\LojaProdutos\obj\Debug\net8.0\LojaProdutos.sourcelink.json
+C:\Users\ferna\source\repos\LojaProdutos\LojaProdutos\bin\Debug\net8.0\ClosedXML.dll
+C:\Users\ferna\source\repos\LojaProdutos\LojaProdutos\bin\Debug\net8.0\ClosedXML.Parser.dll
+C:\Users\ferna\source\repos\LojaProdutos\LojaProdutos\bin\Debug\net8.0\DocumentFormat.OpenXml.dll
+C:\Users\ferna\source\repos\LojaProdutos\LojaProdutos\bin\Debug\net8.0\DocumentFormat.OpenXml.Framework.dll
+C:\Users\ferna\source\repos\LojaProdutos\LojaProdutos\bin\Debug\net8.0\ExcelNumberFormat.dll
+C:\Users\ferna\source\repos\LojaProdutos\LojaProdutos\bin\Debug\net8.0\RBush.dll
+C:\Users\ferna\source\repos\LojaProdutos\LojaProdutos\bin\Debug\net8.0\SixLabors.Fonts.dll
+C:\Users\ferna\source\repos\LojaProdutos\LojaProdutos\bin\Debug\net8.0\System.IO.Packaging.dll

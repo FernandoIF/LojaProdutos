@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5BtschoTLVxXPBF2BijNCHT6AQP7F/lUbmx6qwMIL9E=",
+  "Hash": "uHrRYtA0SF9OZhZVkijSy7ZkJCCfkSCMw5U31xzZUbg=",
   "Source": "LojaProdutos",
   "BasePath": "_content/LojaProdutos",
   "Mode": "Default",
@@ -164,6 +164,27 @@
       "OriginalItemSpec": "wwwroot\\imagem\\cgllhzzq7mi1gabwew0qkg78xmwjfyxhrhdsc8ounwe.jpg15c01173-7f98-4a73-9245-d76a6c8e0762.png"
     },
     {
+      "Identity": "C:\\Users\\ferna\\source\\repos\\LojaProdutos\\LojaProdutos\\wwwroot\\imagem\\cgllhzzq7mi1gabwew0qkg78xmwjfyxhrhdsc8ounwe.jpgf396f0b9-112c-42f8-8d48-826cce17e59a.png",
+      "SourceId": "LojaProdutos",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ferna\\source\\repos\\LojaProdutos\\LojaProdutos\\wwwroot\\",
+      "BasePath": "_content/LojaProdutos",
+      "RelativePath": "imagem/cgllhzzq7mi1gabwew0qkg78xmwjfyxhrhdsc8ounwe.jpgf396f0b9-112c-42f8-8d48-826cce17e59a#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lddi9y6g2r",
+      "Integrity": "OeWpG611BxwGHtrAA5ga+4efwRChklpGD+L/wPKjSgU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagem\\cgllhzzq7mi1gabwew0qkg78xmwjfyxhrhdsc8ounwe.jpgf396f0b9-112c-42f8-8d48-826cce17e59a.png"
+    },
+    {
       "Identity": "C:\\Users\\ferna\\source\\repos\\LojaProdutos\\LojaProdutos\\wwwroot\\imagem\\eu.jpg45eae8b1-bb6a-46ff-b94c-ef7ac35d91f5.png",
       "SourceId": "LojaProdutos",
       "SourceType": "Discovered",
@@ -183,6 +204,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagem\\eu.jpg45eae8b1-bb6a-46ff-b94c-ef7ac35d91f5.png"
+    },
+    {
+      "Identity": "C:\\Users\\ferna\\source\\repos\\LojaProdutos\\LojaProdutos\\wwwroot\\imagem\\sandalia_2.jpga5e8e319-ded1-4fe9-836e-5a4d7ed771da.png",
+      "SourceId": "LojaProdutos",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ferna\\source\\repos\\LojaProdutos\\LojaProdutos\\wwwroot\\",
+      "BasePath": "_content/LojaProdutos",
+      "RelativePath": "imagem/sandalia_2.jpga5e8e319-ded1-4fe9-836e-5a4d7ed771da#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "r0y42d4p8k",
+      "Integrity": "xWQmSJ1Bpv/K5BElRtM78K9egNQQgP/Yl5wV6wIO8pI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagem\\sandalia_2.jpga5e8e319-ded1-4fe9-836e-5a4d7ed771da.png"
     },
     {
       "Identity": "C:\\Users\\ferna\\source\\repos\\LojaProdutos\\LojaProdutos\\wwwroot\\js\\site.js",
@@ -1815,6 +1857,88 @@
       ]
     },
     {
+      "Route": "imagem/cgllhzzq7mi1gabwew0qkg78xmwjfyxhrhdsc8ounwe.jpgf396f0b9-112c-42f8-8d48-826cce17e59a.lddi9y6g2r.png",
+      "AssetFile": "C:\\Users\\ferna\\source\\repos\\LojaProdutos\\LojaProdutos\\wwwroot\\imagem\\cgllhzzq7mi1gabwew0qkg78xmwjfyxhrhdsc8ounwe.jpgf396f0b9-112c-42f8-8d48-826cce17e59a.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "320827"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OeWpG611BxwGHtrAA5ga+4efwRChklpGD+L/wPKjSgU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Feb 2025 23:59:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lddi9y6g2r"
+        },
+        {
+          "Name": "label",
+          "Value": "imagem/cgllhzzq7mi1gabwew0qkg78xmwjfyxhrhdsc8ounwe.jpgf396f0b9-112c-42f8-8d48-826cce17e59a.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OeWpG611BxwGHtrAA5ga+4efwRChklpGD+L/wPKjSgU="
+        }
+      ]
+    },
+    {
+      "Route": "imagem/cgllhzzq7mi1gabwew0qkg78xmwjfyxhrhdsc8ounwe.jpgf396f0b9-112c-42f8-8d48-826cce17e59a.png",
+      "AssetFile": "C:\\Users\\ferna\\source\\repos\\LojaProdutos\\LojaProdutos\\wwwroot\\imagem\\cgllhzzq7mi1gabwew0qkg78xmwjfyxhrhdsc8ounwe.jpgf396f0b9-112c-42f8-8d48-826cce17e59a.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "320827"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OeWpG611BxwGHtrAA5ga+4efwRChklpGD+L/wPKjSgU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Feb 2025 23:59:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OeWpG611BxwGHtrAA5ga+4efwRChklpGD+L/wPKjSgU="
+        }
+      ]
+    },
+    {
       "Route": "imagem/eu.jpg45eae8b1-bb6a-46ff-b94c-ef7ac35d91f5.png",
       "AssetFile": "C:\\Users\\ferna\\source\\repos\\LojaProdutos\\LojaProdutos\\wwwroot\\imagem\\eu.jpg45eae8b1-bb6a-46ff-b94c-ef7ac35d91f5.png",
       "Selectors": [],
@@ -1893,6 +2017,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-Hy9bF532Yip3xFOn5s+bEIvfQ5eJKaJZC8DeIdXC/QY="
+        }
+      ]
+    },
+    {
+      "Route": "imagem/sandalia_2.jpga5e8e319-ded1-4fe9-836e-5a4d7ed771da.png",
+      "AssetFile": "C:\\Users\\ferna\\source\\repos\\LojaProdutos\\LojaProdutos\\wwwroot\\imagem\\sandalia_2.jpga5e8e319-ded1-4fe9-836e-5a4d7ed771da.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "116941"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xWQmSJ1Bpv/K5BElRtM78K9egNQQgP/Yl5wV6wIO8pI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Feb 2025 14:41:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xWQmSJ1Bpv/K5BElRtM78K9egNQQgP/Yl5wV6wIO8pI="
+        }
+      ]
+    },
+    {
+      "Route": "imagem/sandalia_2.jpga5e8e319-ded1-4fe9-836e-5a4d7ed771da.r0y42d4p8k.png",
+      "AssetFile": "C:\\Users\\ferna\\source\\repos\\LojaProdutos\\LojaProdutos\\wwwroot\\imagem\\sandalia_2.jpga5e8e319-ded1-4fe9-836e-5a4d7ed771da.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "116941"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xWQmSJ1Bpv/K5BElRtM78K9egNQQgP/Yl5wV6wIO8pI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Feb 2025 14:41:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "r0y42d4p8k"
+        },
+        {
+          "Name": "label",
+          "Value": "imagem/sandalia_2.jpga5e8e319-ded1-4fe9-836e-5a4d7ed771da.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xWQmSJ1Bpv/K5BElRtM78K9egNQQgP/Yl5wV6wIO8pI="
         }
       ]
     },

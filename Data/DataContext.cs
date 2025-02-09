@@ -14,6 +14,8 @@ namespace LojaProdutos.Data
         public DbSet<ProdutoModel> Produto { get; set; }
         public DbSet<CategoriaModel> Categoria { get; set; }
         public DbSet<ProdutosBaixadosModel> ProdutosBaixados { get; set; }
+        public DbSet<UsuarioModel> Usuario { get; set; }
+        public DbSet<EnderecoModel> Endereco { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
