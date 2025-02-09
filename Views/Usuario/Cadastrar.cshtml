@@ -1,6 +1,20 @@
 ﻿@using LojaProdutos.Dto.Usuario
 @model CriarUsuarioDTO
 
+@if (TempData["MensagemSucesso"] != null)
+{
+	<div class="alert alert-success text-dark" role="alert">
+		@TempData["MensagemSucesso"]
+	</div>
+}
+
+@if (TempData["MensagemErro"] != null)
+{
+	<div class="alert alert-danger text-dark" role="alert">
+		@TempData["MensagemErro"]
+	</div>
+}
+
 <div class="container mt-5">
 	<h2>Cadastro de Usuários</h2>
 	<form asp-action="Cadastrar" asp-controller="Usuario" method="post">
@@ -47,7 +61,7 @@
 			</div>
 			<div class="col-6 mb-1">
 				<label class="form-label">Complemento:</label>
-				<input type="number" class="form-control shadow-none" id="input-complemento" asp-for="Complemento" />
+				<input type="text" class="form-control shadow-none" id="input-complemento" asp-for="Complemento" />
 			</div>
 		</div>
 		<div class="mb-1">
@@ -87,7 +101,6 @@
 		inputLogradouro.value = dados.logradouro;
 		inputBairro.value = dados.bairro;
 		inputEstado.value = dados.estado;
-		inputComplemento.value = dados.inputComplemento;
 	})
 
 </script>
