@@ -96,6 +96,18 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"r0y42d4p8k"},{"Name":"integrity","Value":"sha256-xWQmSJ1Bpv/K5BElRtM78K9egNQQgP/Yl5wV6wIO8pI="},{"Name":"label","Value":"_content/LojaProdutos/imagem/sandalia_2.jpga5e8e319-ded1-4fe9-836e-5a4d7ed771da.png"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"116941"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022xWQmSJ1Bpv/K5BElRtM78K9egNQQgP/Yl5wV6wIO8pI=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Feb 2025 14:41:12 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/LojaProdutos/imagem/sapato_masc.jpge4a80ccf-8c2f-446f-b6bc-27b39e4e684b.e6051r1lio.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\imagem\sapato_masc.jpge4a80ccf-8c2f-446f-b6bc-27b39e4e684b.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"e6051r1lio"},{"Name":"integrity","Value":"sha256-Js1IbBO7b2gB/TcJKOi7rs/0d2eJbvnUS7QSzBp/xqk="},{"Name":"label","Value":"_content/LojaProdutos/imagem/sapato_masc.jpge4a80ccf-8c2f-446f-b6bc-27b39e4e684b.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"7331"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022Js1IbBO7b2gB/TcJKOi7rs/0d2eJbvnUS7QSzBp/xqk=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Feb 2025 15:11:25 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/LojaProdutos/imagem/sapato_masc.jpge4a80ccf-8c2f-446f-b6bc-27b39e4e684b.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\imagem\sapato_masc.jpge4a80ccf-8c2f-446f-b6bc-27b39e4e684b.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Js1IbBO7b2gB/TcJKOi7rs/0d2eJbvnUS7QSzBp/xqk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"7331"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022Js1IbBO7b2gB/TcJKOi7rs/0d2eJbvnUS7QSzBp/xqk=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Feb 2025 15:11:25 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/LojaProdutos/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

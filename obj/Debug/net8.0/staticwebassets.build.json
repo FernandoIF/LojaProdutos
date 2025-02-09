@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "uHrRYtA0SF9OZhZVkijSy7ZkJCCfkSCMw5U31xzZUbg=",
+  "Hash": "mpAYgsXoCGE+Mtk3Rx7Tv93ewglN8hhhJiPBAnlM5i8=",
   "Source": "LojaProdutos",
   "BasePath": "_content/LojaProdutos",
   "Mode": "Default",
@@ -225,6 +225,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagem\\sandalia_2.jpga5e8e319-ded1-4fe9-836e-5a4d7ed771da.png"
+    },
+    {
+      "Identity": "C:\\Users\\ferna\\source\\repos\\LojaProdutos\\LojaProdutos\\wwwroot\\imagem\\sapato_masc.jpge4a80ccf-8c2f-446f-b6bc-27b39e4e684b.png",
+      "SourceId": "LojaProdutos",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ferna\\source\\repos\\LojaProdutos\\LojaProdutos\\wwwroot\\",
+      "BasePath": "_content/LojaProdutos",
+      "RelativePath": "imagem/sapato_masc.jpge4a80ccf-8c2f-446f-b6bc-27b39e4e684b#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "e6051r1lio",
+      "Integrity": "Js1IbBO7b2gB/TcJKOi7rs/0d2eJbvnUS7QSzBp/xqk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagem\\sapato_masc.jpge4a80ccf-8c2f-446f-b6bc-27b39e4e684b.png"
     },
     {
       "Identity": "C:\\Users\\ferna\\source\\repos\\LojaProdutos\\LojaProdutos\\wwwroot\\js\\site.js",
@@ -2099,6 +2120,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-xWQmSJ1Bpv/K5BElRtM78K9egNQQgP/Yl5wV6wIO8pI="
+        }
+      ]
+    },
+    {
+      "Route": "imagem/sapato_masc.jpge4a80ccf-8c2f-446f-b6bc-27b39e4e684b.e6051r1lio.png",
+      "AssetFile": "C:\\Users\\ferna\\source\\repos\\LojaProdutos\\LojaProdutos\\wwwroot\\imagem\\sapato_masc.jpge4a80ccf-8c2f-446f-b6bc-27b39e4e684b.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7331"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Js1IbBO7b2gB/TcJKOi7rs/0d2eJbvnUS7QSzBp/xqk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Feb 2025 15:11:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "e6051r1lio"
+        },
+        {
+          "Name": "label",
+          "Value": "imagem/sapato_masc.jpge4a80ccf-8c2f-446f-b6bc-27b39e4e684b.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Js1IbBO7b2gB/TcJKOi7rs/0d2eJbvnUS7QSzBp/xqk="
+        }
+      ]
+    },
+    {
+      "Route": "imagem/sapato_masc.jpge4a80ccf-8c2f-446f-b6bc-27b39e4e684b.png",
+      "AssetFile": "C:\\Users\\ferna\\source\\repos\\LojaProdutos\\LojaProdutos\\wwwroot\\imagem\\sapato_masc.jpge4a80ccf-8c2f-446f-b6bc-27b39e4e684b.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7331"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Js1IbBO7b2gB/TcJKOi7rs/0d2eJbvnUS7QSzBp/xqk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Feb 2025 15:11:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Js1IbBO7b2gB/TcJKOi7rs/0d2eJbvnUS7QSzBp/xqk="
         }
       ]
     },
