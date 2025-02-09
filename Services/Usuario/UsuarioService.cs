@@ -1,4 +1,5 @@
-﻿using LojaProdutos.Data;
+﻿using AutoMapper;
+using LojaProdutos.Data;
 using LojaProdutos.Dto.Usuario;
 using LojaProdutos.Models;
 using LojaProdutos.Services.Autenticacao;
@@ -10,11 +11,13 @@ namespace LojaProdutos.Services.Usuario
     {
         private readonly DataContext _dataContext;
         private readonly IAutenticacaoInterface _autenticacaoInterface;
+        private readonly IMapper _mapper;
 
-        public UsuarioService(DataContext dataContext, IAutenticacaoInterface autenticacaoInterface)
+        public UsuarioService(DataContext dataContext, IAutenticacaoInterface autenticacaoInterface, IMapper mapper)
         {
             _dataContext = dataContext;
             _autenticacaoInterface = autenticacaoInterface;
+            _mapper = mapper;
         }
         public async Task<UsuarioModel> BuscarUsuarioPorId(int id)
         {
@@ -76,6 +79,29 @@ namespace LojaProdutos.Services.Usuario
                 return criarUsuarioDTO;
             }
             catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public async Task<UsuarioModel> Editar(EditarUsuarioDTO editarUsuarioDTO)
+        {
+            try
+            {
+                var usuarioBanco = await _dataContext.Usuario.Include(e => e.Endereco)
+                                                             .FirstOrDefaultAsync(u => u.Id == editarUsuarioDTO.Id);
+                usuarioBanco.Nome = editarUsuarioDTO.Nome;
+                usuarioBanco.Cargo = editarUsuarioDTO.Cargo;
+                usuarioBanco.Email = editarUsuarioDTO.Email;
+                usuarioBanco.DataAlteracao = DateTime.Now;
+                usuarioBanco.Endereco = _mapper.Map<EnderecoModel>(editarUsuarioDTO.Endereco);
+
+                _dataContext.Update(usuarioBanco);
+                await _dataContext.SaveChangesAsync();
+
+                return usuarioBanco;
+            }
+            catch(Exception ex)
             {
                 throw new Exception(ex.Message);
             }
