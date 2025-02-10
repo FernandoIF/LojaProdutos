@@ -1,8 +1,11 @@
 ﻿using AutoMapper;
+using DocumentFormat.OpenXml.InkML;
 using LojaProdutos.Data;
+using LojaProdutos.Dto.LoginUsuario;
 using LojaProdutos.Dto.Usuario;
 using LojaProdutos.Models;
 using LojaProdutos.Services.Autenticacao;
+using LojaProdutos.Services.SessaoUsuario;
 using Microsoft.EntityFrameworkCore;
 
 namespace LojaProdutos.Services.Usuario
@@ -12,12 +15,17 @@ namespace LojaProdutos.Services.Usuario
         private readonly DataContext _dataContext;
         private readonly IAutenticacaoInterface _autenticacaoInterface;
         private readonly IMapper _mapper;
+        private readonly ISessaoInterface _sessaoInterface;
 
-        public UsuarioService(DataContext dataContext, IAutenticacaoInterface autenticacaoInterface, IMapper mapper)
+        public UsuarioService(DataContext dataContext, 
+            IAutenticacaoInterface autenticacaoInterface,
+            IMapper mapper, 
+            ISessaoInterface sessaoInterface)
         {
             _dataContext = dataContext;
             _autenticacaoInterface = autenticacaoInterface;
             _mapper = mapper;
+            _sessaoInterface = sessaoInterface;
         }
         public async Task<UsuarioModel> BuscarUsuarioPorId(int id)
         {
@@ -102,6 +110,35 @@ namespace LojaProdutos.Services.Usuario
                 return usuarioBanco;
             }
             catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public async Task<UsuarioModel> Login(LoginUsuarioDTO loginUsuarioDto)
+        {
+            try
+            {
+
+                var usuarioBanco = await _dataContext.Usuario.FirstOrDefaultAsync(x => x.Email == loginUsuarioDto.Email);
+
+                if (usuarioBanco == null)
+                {
+                    return null;
+                }
+
+                if (!_autenticacaoInterface.VerificaLogin(loginUsuarioDto.Senha, usuarioBanco.SenhaHash, usuarioBanco.SenhaSalt))
+                {
+                    return null;
+                }
+
+                //Criar Sessao
+                _sessaoInterface.CriarSessao(usuarioBanco);
+
+                return usuarioBanco;
+
+            }
+            catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }

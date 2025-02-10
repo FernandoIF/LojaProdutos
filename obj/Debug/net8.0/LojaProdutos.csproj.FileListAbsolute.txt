@@ -473,3 +473,4 @@ C:\Users\ferna\source\repos\LojaProdutos\LojaProdutos\bin\Debug\net8.0\RBush.dll
 C:\Users\ferna\source\repos\LojaProdutos\LojaProdutos\bin\Debug\net8.0\SixLabors.Fonts.dll
 C:\Users\ferna\source\repos\LojaProdutos\LojaProdutos\bin\Debug\net8.0\System.IO.Packaging.dll
 C:\Users\ferna\source\repos\LojaProdutos\LojaProdutos\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\ferna\source\repos\LojaProdutos\LojaProdutos\bin\Debug\net8.0\Newtonsoft.Json.dll

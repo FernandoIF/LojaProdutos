@@ -1,4 +1,5 @@
-﻿using LojaProdutos.Enums;
+﻿using System.Text.Json.Serialization;
+using LojaProdutos.Enums;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 
 namespace LojaProdutos.Models

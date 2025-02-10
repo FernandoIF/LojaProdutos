@@ -4,6 +4,7 @@ using LojaProdutos.Services.Autenticação;
 using LojaProdutos.Services.Categoria;
 using LojaProdutos.Services.Estoque;
 using LojaProdutos.Services.Produto;
+using LojaProdutos.Services.SessaoUsuario;
 using LojaProdutos.Services.Usuario;
 using Microsoft.AspNetCore.Connections;
 using Microsoft.EntityFrameworkCore;
@@ -19,13 +20,21 @@ builder.Services.AddDbContext<DataContext>(options =>
 
 });
 
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 builder.Services.AddScoped<IProdutoInterface, ProdutoService>();
 builder.Services.AddScoped<ICategoriaInterface, CategoriaService>();
 builder.Services.AddScoped<IEstoqueInterface, EstoqueService>();
 builder.Services.AddScoped<IUsuarioInterface, UsuarioService>();
 builder.Services.AddScoped<IAutenticacaoInterface, AutenticacaoService>();
+builder.Services.AddScoped<ISessaoInterface, SessaoService>();
 
 builder.Services.AddAutoMapper(typeof(Program));
+
+builder.Services.AddSession(options =>
+{
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
 
 var app = builder.Build();
 
@@ -44,8 +53,10 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+app.UseSession();
+
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Login}/{action=Login}/{id?}");
 
 app.Run();
