@@ -1,11 +1,14 @@
 ﻿using System.Data;
 using ClosedXML.Excel;
 using DocumentFormat.OpenXml.Spreadsheet;
+using LojaProdutos.Filtros;
 using LojaProdutos.Services.Estoque;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LojaProdutos.Controllers
 {
+    [UsuarioLogado]
+    [UsuarioLogadoAdm]
     public class EstoqueController : Controller
     {
         private readonly IEstoqueInterface _estoqueInterface;

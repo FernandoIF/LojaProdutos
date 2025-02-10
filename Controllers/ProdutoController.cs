@@ -1,11 +1,13 @@
 ﻿using System.Reflection.Metadata.Ecma335;
 using LojaProdutos.Dto.Produto;
+using LojaProdutos.Filtros;
 using LojaProdutos.Services.Categoria;
 using LojaProdutos.Services.Produto;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LojaProdutos.Controllers
 {
+    [UsuarioLogado]
     public class ProdutoController : Controller
     {
         private readonly IProdutoInterface _produtoInterface;
@@ -15,6 +17,7 @@ namespace LojaProdutos.Controllers
             _produtoInterface = produtoInterface;
             _categoriaInterface = categoriaInterface;
         }
+        [UsuarioLogadoAdm]
         public async Task<IActionResult> Index()
         {
             var produtos = await _produtoInterface.BuscarProdutos();
@@ -22,6 +25,7 @@ namespace LojaProdutos.Controllers
             return View(produtos);
         }
 
+        [UsuarioLogadoAdm]
         public async Task<IActionResult> Cadastrar()
         {
             ViewBag.Categorias = await _categoriaInterface.BuscarCategorias();
@@ -29,6 +33,7 @@ namespace LojaProdutos.Controllers
             return View();
         }
 
+        [UsuarioLogadoAdm]
         public async Task<IActionResult> Remover(int id)
         {
             var produto = await _produtoInterface.Remover(id);
@@ -41,6 +46,8 @@ namespace LojaProdutos.Controllers
 
             return View(produto);
         }
+
+        [UsuarioLogadoAdm]
         public async Task<IActionResult> Editar(int id)
         {
             var produto = await _produtoInterface.BuscarProdutoPorId(id);
@@ -61,6 +68,7 @@ namespace LojaProdutos.Controllers
         }
 
         [HttpPost]
+        [UsuarioLogadoAdm]
         public async Task<IActionResult> Cadastrar(CriarProdutoDTO criarProdutoDTO, IFormFile foto)
         {
             if (ModelState.IsValid)
@@ -80,6 +88,7 @@ namespace LojaProdutos.Controllers
         }
 
         [HttpPost]
+        [UsuarioLogadoAdm]
         public async Task<IActionResult> Editar(EditarProdutoDTO editarProdutoDTO, IFormFile? foto)
         {
             if (ModelState.IsValid)
